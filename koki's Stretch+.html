@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ぷらすふぉー</title>
+    <link rel="stylesheet" type="text/css" href="koki's Stretch+.css">
+</head>
+
+<body>
+	<div class="tabs">
+        <button class="tab-button active" onclick="showTab(0)">ぷらす</button>
+        <button class="tab-button" onclick="showTab(1)">ふぉー</button>
+    </div>
+
+    <div class="tab-content active" id="tab-content-0">
+        <h2>タブ1の内容</h2>
+        <p>こちらはタブ1の内容です。</p>
+    </div>
+
+    <div class="tab-content" id="tab-content-1">
+        <h2>タブ2の内容</h2>
+        <p>こちらはタブ2の内容です。</p>
+    </div>
+   
+</body>
+
+<script>
+        function showTab(tabIndex) {
+            // すべてのタブとコンテンツを非表示にする
+            const allTabs = document.querySelectorAll('.tab-button');
+            const allContents = document.querySelectorAll('.tab-content');
+
+            allTabs.forEach((tab, index) => {
+                tab.classList.remove('active');
+                allContents[index].classList.remove('active');
+            });
+
+            // 選択されたタブとコンテンツを表示する
+            allTabs[tabIndex].classList.add('active');
+            allContents[tabIndex].classList.add('active');
+
+            // 選択されたタブの背景色をそのコンテンツの背景色に変更
+            const activeContent = allContents[tabIndex];
+            const tabButton = allTabs[tabIndex];
+            const activeBackgroundColor = getComputedStyle(activeContent).backgroundColor;
+
+            // タブボタンの背景色をコンテンツの背景色に設定
+            tabButton.style.backgroundColor = activeBackgroundColor;
+        }
+</script>
+
+</html>

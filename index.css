@@ -22,7 +22,10 @@
 
         /* タブのボタン */
         .tabs button {
+            width: 160px;
             padding: 10px 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
             cursor: pointer;
             background-color: #f1f1f1;
             border: none;

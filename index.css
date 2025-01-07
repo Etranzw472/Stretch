@@ -52,38 +52,6 @@
             background-color: #e0e0e0; /* タブ1の背景色 */
         }
 		
-		.gallery-container {
-      display: flex;
-      overflow-x: auto; /* 横スクロールを有効に */
-      scroll-snap-type: x mandatory; /* スクロールスナップを横方向に有効に */
-      padding: 20px 0;
-      width: 100vw; /* 画面幅に合わせる */
-      box-sizing: border-box;
-    }
-
-    .gallery-item {
-      flex-shrink: 0; /* アイテムが縮小しないように */
-      width: 360px; /* 画像の幅を400pxに設定 */
-      height: 270px; /* 画像の高さを300pxに設定 */
-      background-size: cover;
-      margin: 0 10px; /* アイテム間の間隔 */
-      scroll-snap-align: center; /* 画像が中央にスナップする */
-      cursor: pointer; /* クリックできることを示す */
-      pointer-events: none; /* 画像をクリックできないようにする */
-    }
-
-    .gallery-container::-webkit-scrollbar {
-      height: 8px;
-    }
-
-    .gallery-container::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 4px;
-    }
-
-    .gallery-container::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
 
         /* レスポンシブ設定 */
         @media (max-width: 600px) {

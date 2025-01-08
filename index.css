@@ -8,6 +8,7 @@
         /* タブのコンテナ */
         .tab-content {
             display: none;
+            background-color: RGB(165, 87, 64);
             padding: 20px;
             box-sizing: border-box;
              border-radius: 10px;

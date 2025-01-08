@@ -2,13 +2,14 @@
         body {
             margin: 0;
             padding: 0;
+        
+            background-color: RGB(165, 87, 64);
             font-family: Arial, sans-serif;
         }
 
         /* タブのコンテナ */
         .tab-content {
             display: none;
-            background-color: RGB(165, 87, 64);
             padding: 20px;
             box-sizing: border-box;
              border-radius: 10px;

@@ -14,7 +14,7 @@ body {
 	padding: 20px;
 	box-sizing: border-box;
 	border-top-right-radius: 15px;
-	width: 98%; /* 画面幅の90%で表示 */
+	width: 95%; /* 画面幅の95%で表示 */
 	min-height: 200px; /* コンテンツが小さくても高さを確保 */
 	overflow: hidden; /* コンテンツがはみ出さないように */
 }

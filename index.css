@@ -2,7 +2,8 @@
 body {
 	margin: 0;
 	padding: 0;    
-	background-color:white;
+	background-color:floralwhite;
+    
 	font-family: Arial, fantasy;
     
 }
@@ -24,6 +25,16 @@ body {
 	display: block;
 }
 
+
+.tab-content-title {
+	margin: 20px auto; /* 上下に余白を設定し、中央寄せ */
+	height: auto; /* 自動高さに設定 */
+	background-color: yellowgreen; /* 背景色 */
+	padding: 10px; /* 内側に余白を追加 */
+	text-align: center; /* テキストを中央揃え */
+	border-radius: 10px; /* 角を丸くする */
+}
+
 /* タブのボタン */
 .tabs button {
 	width: 160px;
@@ -40,23 +51,30 @@ body {
 
 /* タブのボタンホバー */
 .tabs button:hover {
-	background-color: #ddd;
+	background-color: #f8f8f8;
 }
 
 /* タブがアクティブなとき */
 .tabs button.active {
-	background-color: #ccc;
+	background-color: white;
 }
 
 /* デフォルト背景色 */
 #tab-content-0 {
-	background-color: #f8f8f8; /* タブ0の背景色 */
+	background-color: white; /* タブ0の背景色 */
 }
 
 #tab-content-1 {
-	background-color: #e0e0e0; /* タブ1の背景色 */
+	background-color: #f8f8f8; /* タブ1の背景色 */
 }
-		
+
+.header-image {
+    width: 300px; /* 横幅 */
+    height: auto; /* アスペクト比を維持したまま高さを調整 */
+    display: block; /* ブロック要素として扱い */
+    margin: 0 auto; /* 中央揃え */
+}
+	
 .gallery-container {
 	display: flex;
 	overflow-x: auto; /* 横スクロールを有効に */

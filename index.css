@@ -26,7 +26,7 @@
 
         /* タブのボタン */
         .tabs button {
-			width: 260px;
+	width: 160px;
             margin: 10px 0px 0px 10px;
             padding: 10px 20px;
             border-top-left-radius: 10px;

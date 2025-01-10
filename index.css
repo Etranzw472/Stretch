@@ -62,14 +62,14 @@
       overflow-x: auto; /* 横スクロールを有効に */
       scroll-snap-type: x mandatory; /* スクロールスナップを横方向に有効に */
       padding: 20px 0;
-      width: 100vw; /* 画面幅に合わせる */
+      width: 95vw; /* 画面幅に合わせる */
       box-sizing: border-box;
     }
 
     .gallery-item {
       flex-shrink: 0; /* アイテムが縮小しないように */
-      width: 360px; /* 画像の幅を400pxに設定 */
-      height: 270px; /* 画像の高さを300pxに設定 */
+      width: 320px; /* 画像の幅を400pxに設定 */
+      height: 240px; /* 画像の高さを300pxに設定 */
       background-size: cover;
       margin: 0 10px; /* アイテム間の間隔 */
       scroll-snap-align: center; /* 画像が中央にスナップする */

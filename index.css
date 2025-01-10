@@ -3,17 +3,18 @@
             margin: 0;
             padding: 0;
         
-            background-color: RGB(165, 87, 64);
-            font-family: Arial, sans-serif;
+            background-color:white;
+            font-family: Arial, fantasy;
         }
 
         /* タブのコンテナ */
         .tab-content {
             display: none;
+            margin: 0px 10px 0px 10px;
             padding: 20px;
             box-sizing: border-box;
-             border-radius: 10px;
-            width: 90%; /* 画面幅いっぱいに広がる */
+            border-top-right-radius: 25px;
+            width: 90%; /* 画面幅の90%で表示 */
             min-height: 200px; /* コンテンツが小さくても高さを確保 */
             overflow: hidden; /* コンテンツがはみ出さないように */
         }
@@ -25,7 +26,8 @@
 
         /* タブのボタン */
         .tabs button {
-			width: 160px;
+			width: 260px;
+            margin: 10px 0px 0px 10px;
             padding: 10px 20px;
             border-top-left-radius: 10px;
 	    border-top-right-radius: 10px;

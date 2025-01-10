@@ -57,11 +57,11 @@
             background-color: #e0e0e0; /* タブ1の背景色 */
         }
 		
-		.gallery-container {
+.gallery-container {
       display: flex;
       overflow-x: auto; /* 横スクロールを有効に */
       scroll-snap-type: x mandatory; /* スクロールスナップを横方向に有効に */
-      padding: 20px 0;
+      padding: 20px 20px 20px 0px;
       width: 95vw; /* 画面幅に合わせる */
       box-sizing: border-box;
     }

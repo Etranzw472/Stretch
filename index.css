@@ -1,98 +1,98 @@
-        /* ベーススタイル */
-        body {
-            margin: 0;
-            padding: 0;
-        
-            background-color:white;
-            font-family: Arial, fantasy;
-        }
+/* ベーススタイル */
+body {
+	margin: 0;
+	padding: 0;    
+	background-color:white;
+	font-family: Arial, fantasy;
+    
+}
 
-        /* タブのコンテナ */
-        .tab-content {
-            display: none;
-            margin: 0px 10px 0px 0px;
-            padding: 20px;
-            box-sizing: border-box;
-            border-top-right-radius: 15px;
-            width: 90%; /* 画面幅の90%で表示 */
-            min-height: 200px; /* コンテンツが小さくても高さを確保 */
-            overflow: hidden; /* コンテンツがはみ出さないように */
-        }
+/* タブのコンテナ */
+.tab-content {
+	display: none;
+	margin: 0px 10px 0px 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-top-right-radius: 15px;
+	width: 98%; /* 画面幅の90%で表示 */
+	min-height: 200px; /* コンテンツが小さくても高さを確保 */
+	overflow: hidden; /* コンテンツがはみ出さないように */
+}
 
-        /* アクティブなタブコンテンツを表示 */
-        .tab-content.active {
-            display: block;
-        }
+/* アクティブなタブコンテンツを表示 */
+.tab-content.active {
+	display: block;
+}
 
-        /* タブのボタン */
-        .tabs button {
+/* タブのボタン */
+.tabs button {
 	width: 160px;
-            margin: 10px 0px 0px 10px;
-            padding: 10px 20px;
-            border-top-left-radius: 10px;
-	    border-top-right-radius: 10px;
-            cursor: pointer;
-            background-color: #f1f1f1;
-            border: none;
-            outline: none;
-            transition: background-color 0.3s;
-        }
+	margin: 10px 0px 0px 10px;
+	padding: 10px 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	cursor: pointer;
+	background-color: #f1f1f1;
+	border: none;
+	outline: none;
+	transition: background-color 0.3s;
+}
 
-        /* タブのボタンホバー */
-        .tabs button:hover {
-            background-color: #ddd;
-        }
+/* タブのボタンホバー */
+.tabs button:hover {
+	background-color: #ddd;
+}
 
-        /* タブがアクティブなとき */
-        .tabs button.active {
-            background-color: #ccc;
-        }
+/* タブがアクティブなとき */
+.tabs button.active {
+	background-color: #ccc;
+}
 
-        /* デフォルト背景色 */
-        #tab-content-0 {
-            background-color: #f8f8f8; /* タブ0の背景色 */
-        }
+/* デフォルト背景色 */
+#tab-content-0 {
+	background-color: #f8f8f8; /* タブ0の背景色 */
+}
 
-        #tab-content-1 {
-            background-color: #e0e0e0; /* タブ1の背景色 */
-        }
+#tab-content-1 {
+	background-color: #e0e0e0; /* タブ1の背景色 */
+}
 		
 .gallery-container {
-      display: flex;
-      overflow-x: auto; /* 横スクロールを有効に */
-      scroll-snap-type: x mandatory; /* スクロールスナップを横方向に有効に */
-      padding: 20px 20px 20px 0px;
-      width: 95vw; /* 画面幅に合わせる */
-      box-sizing: border-box;
-    }
+	display: flex;
+	overflow-x: auto; /* 横スクロールを有効に */
+	scroll-snap-type: x mandatory; /* スクロールスナップを横方向に有効に */
+	padding: 20px 20px 20px 0px;
+	width: 95vw; /* 画面幅に合わせる */
+	box-sizing: border-box;
+}
 
-    .gallery-item {
-      flex-shrink: 0; /* アイテムが縮小しないように */
-      width: 320px; /* 画像の幅を400pxに設定 */
-      height: 240px; /* 画像の高さを300pxに設定 */
-      background-size: cover;
-      margin: 0 10px; /* アイテム間の間隔 */
-      scroll-snap-align: center; /* 画像が中央にスナップする */
-      cursor: pointer; /* クリックできることを示す */
-      pointer-events: none; /* 画像をクリックできないようにする */
-    }
+.gallery-item {
+	flex-shrink: 0; /* アイテムが縮小しないように */
+	width: 320px; /* 画像の幅を400pxに設定 */
+	height: 240px; /* 画像の高さを300pxに設定 */
+	background-size: cover;
+	margin: 0 10px; /* アイテム間の間隔 */
+	scroll-snap-align: center; /* 画像が中央にスナップする */
+	cursor: pointer; /* クリックできることを示す */
+	pointer-events: none; /* 画像をクリックできないようにする */
+}
 
-    .gallery-container::-webkit-scrollbar {
-      height: 8px;
-    }
+.gallery-container::-webkit-scrollbar {
+	height: 8px;
+}
 
-    .gallery-container::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 4px;
-    }
+.gallery-container::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 4px;
+}
 
-    .gallery-container::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
+.gallery-container::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
 
-        /* レスポンシブ設定 */
-        @media (max-width: 600px) {
-            .tab-content {
-                padding: 15px; /* モバイル端末ではパディングを少し小さくする */
-            }
-        }
+/* レスポンシブ設定 */
+@media (max-width: 600px) {
+	.tab-content {
+		padding: 15px; /* モバイル端末ではパディングを少し小さくする */
+	}
+}

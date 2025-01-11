@@ -2,10 +2,26 @@
 body {
 	margin: 0;
 	padding: 0;    
-	background-color:floralwhite;
+	background-color:sienna;
     
-	font-family: Arial, fantasy;
     
+    
+	font-family: "メイリオ", "MSゴシック";
+    
+}
+
+h2  {
+	text-align: center;
+	font-family: cursive;
+    font-size: 1.5rem;
+}
+
+.dot-line {
+  border-bottom: 4px dotted RGB(178, 85, 50);
+}
+
+p {
+    text-indent: 1em;
 }
 
 /* タブのコンテナ */

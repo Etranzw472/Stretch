@@ -16,12 +16,19 @@ h2  {
     font-size: 1.5rem;
 }
 
+h3  {
+    font-size: 1.2rem;
+    color: RGB(178, 85, 50);
+}
+
+
 .dot-line {
   border-bottom: 4px dotted RGB(178, 85, 50);
 }
 
 p {
     text-indent: 1em;
+    font-size: 0.9rem;
 }
 
 /* タブのコンテナ */
@@ -54,6 +61,7 @@ p {
 /* タブのボタン */
 .tabs button {
 	width: 160px;
+    height: 50px;
 	margin: 10px 0px 0px 10px;
 	padding: 10px 20px;
 	border-top-left-radius: 10px;

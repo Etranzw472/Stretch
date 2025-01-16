@@ -1,4 +1,7 @@
 /* ベーススタイル */
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded');
+
+/* ベーススタイル */
 body {
 	margin: 0;
 	padding: 0;    
@@ -6,11 +9,11 @@ body {
     
     
     
-	font-family: "メイリオ", "MSゴシック";
-    
+	
 }
 
 h2  {
+	font-family:'Mochiy Pop One';
 	text-align: center;
 	font-family: cursive;
     font-size: 1.5rem;
@@ -27,6 +30,7 @@ h3  {
 }
 
 p {
+	font-family:"monospace";
     text-indent: 1em;
     font-size: 0.9rem;
 }

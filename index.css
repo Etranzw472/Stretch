@@ -20,6 +20,11 @@ h2  {
 }
 
 h3  {
+    font-size: 1.3rem;
+    border-bottom: solid 2px black;
+}
+
+h4  {
     font-size: 1.2rem;
     color: RGB(178, 85, 50);
 }

@@ -5,22 +5,21 @@
 body {
 	margin: 0;
 	padding: 0;    
-	background-color:sienna;
-    
-    
-    
-	
+    background-image: url('background-image.png');
+    background-repeat: repeat;
+    background-size: cover;   
+	z-index: 0;	
 }
 
 h2  {
 	font-family:'Mochiy Pop One';
 	text-align: center;
 	font-family: cursive;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 h3  {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     border-bottom: solid 2px black;
 }
 
@@ -47,6 +46,7 @@ p {
 	padding: 20px;
 	box-sizing: border-box;
 	border-top-right-radius: 15px;
+    border: solid 2px #deb887;  
 	width: 95%; /* 画面幅の95%で表示 */
 	min-height: 200px; /* コンテンツが小さくても高さを確保 */
 	overflow: hidden; /* コンテンツがはみ出さないように */
@@ -80,16 +80,20 @@ p {
 	border: none;
 	outline: none;
 	transition: background-color 0.3s;
+
 }
 
 /* タブのボタンホバー */
 .tabs button:hover {
-	background-color: #f8f8f8;
+	background-color: whitesmoke;
 }
 
 /* タブがアクティブなとき */
 .tabs button.active {
 	background-color: white;
+    border: solid 2px #deb887;
+    border-bottom: solid 2px white;
+    z-index: 10;
 }
 
 /* デフォルト背景色 */
@@ -98,7 +102,7 @@ p {
 }
 
 #tab-content-1 {
-	background-color: #f8f8f8; /* タブ1の背景色 */
+	background-color: white;  /* タブ1の背景色 */
 }
 
 .header-image {

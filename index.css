@@ -30,7 +30,7 @@ h4  {
 
 
 .dot-line {
-  border-bottom: 4px dotted RGB(178, 85, 50);
+	border-bottom: 4px dotted RGB(178, 85, 50);
 }
 
 p {
@@ -38,6 +38,43 @@ p {
 	text-indent: 1em;
 	font-size: 0.9rem;
 }
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.detail-item-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+
+.detail-item-wrapper.right {
+    justify-content: flex-end;
+}
+
+.centered-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.detail-item {
+    width: 200px;
+    height: 150px;
+    margin: 15px;
+}
+
+.ashiato	{
+    display: block;
+    width: 90px;
+    height: 90px;
+}
+
 
 /* タブのコンテナ */
 .tab-content {
